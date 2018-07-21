@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anroche <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/26 15:02:57 by anroche           #+#    #+#             */
+/*   Updated: 2017/08/09 17:32:50 by anroche          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # define BUFF_SIZE 4096
@@ -13,13 +25,12 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-typedef struct      s_void_list
+typedef struct		s_void_list
 {
 	void			*data;
-	size_t          content_size;
-	struct s_list   *nxt;
-}
-t_void_list;
+	size_t			content_size;
+	struct s_list	*nxt;
+}					t_void_list;
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -91,14 +102,8 @@ t_list				*ft_create_elem(int *data);
 void				ft_list_push_back(t_list **begin_list, int *data);
 t_list				*add_link(t_list **list, void *data);
 t_list				*ft_lstnew(void const *content, size_t content_size);
-int 				ft_len_list(t_list *list);
-//void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-//void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
-//void				ft_lstadd(t_list **alst, t_list *new);
-//void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-//t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					ft_len_list(t_list *list);
 void				ft_swap(void **a, void **b);
-//void				ft_lstsort(t_list **list);
 char				*ft_strconcat(char *src1, char *src2);
 char				*ft_charconcat(char *src, char c);
 char				*ft_cutchr(char *src, char c);

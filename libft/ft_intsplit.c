@@ -6,19 +6,17 @@
 /*   By: anroche <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/29 20:24:24 by anroche           #+#    #+#             */
-/*   Updated: 2017/06/16 16:26:34 by anroche          ###   ########.fr       */
+/*   Updated: 2017/08/09 17:39:52 by anroche          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-
-int		ft_count_word(const char *s, char c);
+#include "libft.h"
 
 int		*ft_intsplit(const char *s, char c)
 {
-	int     i;
-	int     j;
-	int     word;
+	int		i;
+	int		j;
+	int		word;
 	int		*array;
 
 	i = 0;
